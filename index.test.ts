@@ -100,14 +100,3 @@ describe("htmlGreeter", () => {
         expect(htmlGreeter.greet('Rookie')).toBe("<div>Hi there, Rookie!</div>");
     });
 });
-
-describe("combining subclasses", () => {
-    test("class defined", () => {
-        let htmlGreeter: HtmlGreeter = new HtmlGreeter("Hi");
-        let loudGreeter: LoudGreeter = new LoudGreeter("Hi");
-        let jsGreeting: JavaScriptGreeter = new JavaScriptGreeter("¡Hola!");
-
-        loudGreeter.addVolume();
-        expect(htmlGreeter.greet('Rookie')).toBe("<div>Hi there, Rookie!</div>");
-    });
-});
