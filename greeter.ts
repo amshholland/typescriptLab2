@@ -1,7 +1,5 @@
 export class Greeter {
-    greeting: string;
-    constructor(greeting: string) {
-        this.greeting = greeting;
+    constructor(public greeting: string) {
     }
 
     greet(name: string): string {
